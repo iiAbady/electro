@@ -3,7 +3,7 @@
         {% if not menu.has_children %}
             <a {{ menu.link_attrs|raw }} href="{{ menu.url }}" class="text-gray-500">{{ menu.title }}</a>
         {% else %}
-            <span>{{ menu.title }}</span>
+            <span >{{ menu.title }}</span>
             <ul>
                 <li class="text-sm font-bold"><a {{ menu.link_attrs|raw }} href="{{ menu.url }}" class="text-gray-500">{{ trans('blocks.home.display_all') }}</a></li>
                 {% for submenu in menu.children %}
@@ -19,7 +19,7 @@
         {{ menu.has_children?' has-children': '' }}"
         {{ menu.attrs|raw }}>
         <a {{ menu.link_attrs|raw }} href="{{ menu.url }}">
-            <span>{{ menu.title }}</span>
+            <span class="text-3xl">{{ menu.title }}</span>
         </a>
         {% if menu.has_children %}
             <div class="sub-menu {{ menu.products?'w-full left-0 flex': 'w-56' }}">

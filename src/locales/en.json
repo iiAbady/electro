@@ -1,7 +1,10 @@
 {
-  "blocks": {
-    "header": {
-      "cart": "Cart"
-    }
-  }
+	"blocks": {
+		"header": {
+			"cart": "Cart"
+		},
+		"footer": {
+			"download_apps": "download ya cunt"
+		}
+	}
 }

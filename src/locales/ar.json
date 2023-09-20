@@ -1,7 +1,10 @@
 {
-  "blocks": {
-    "header": {
-      "cart": "السلة"
-    }
-  }
+	"blocks": {
+		"header": {
+			"cart": "السلة"
+		},
+		"footer": {
+			"download_apps": "تحميل يا خنيث"
+		}
+	}
 }
