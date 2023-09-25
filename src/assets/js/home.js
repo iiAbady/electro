@@ -49,7 +49,23 @@ class Home extends BasePage {
 			.forEach((block) => block.classList.add('tabs-initialized'));
 	}
 
-	getCategories() {}
+	getCategories() {
+		const queryParams = {
+			source: 'categories',
+		};
+
+		// Call the fetch method
+		salla.product
+			.fetch(queryParams)
+			.then((response) => {
+				// Do something with the response data
+				console.log(response);
+			})
+			.catch((error) => {
+				// Handle any errors that occur
+				console.error(error);
+			});
+	}
 }
 
 Home.initiateWhenReady(['index']);
