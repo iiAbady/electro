@@ -4,7 +4,9 @@
 			"cart": "Cart"
 		},
 		"footer": {
-			"download_apps": "download ya cunt"
+			"about": "About us",
+			"download_apps": "Download on",
+			"contact": "Contact us"
 		}
 	}
 }

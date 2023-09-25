@@ -7,7 +7,12 @@
 #}
 {% extends "layouts.master" %}
 {% block content %}
-    {% component home %}
+	{% component 'home.latest-products' %}
+{% for brand in component.brands %}
+    <a href="{{ brand.url }}/test">
+        <img src="{{ brand.logo }}" alt=""/>
+    </a>
+{% endfor %}
 {% endblock %}
 {% block scripts %}
     <script defer src="{{ 'home.js' | asset }}"></script>

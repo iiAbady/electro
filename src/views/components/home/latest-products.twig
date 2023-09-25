@@ -5,9 +5,46 @@
 | position        | Int        | Sorting number start from zero |
 #}
 <section class="s-block s-block--latest-products container mt-6 sm:mt-8">
-    <div class="s-block__title">
-      <h2>{{ trans('blocks.home.latest_products') }}</h2>
-    </div>
-    
-    <salla-products-list source="latest"></salla-products-list>
+    {# <div class="s-block__title text-center">
+      <h1 class="text-3xl">{{ trans('blocks.home.latest_products') }}</h1>
+    </div> #}
+
+<style>
+.s-slider-block__title {
+	display: block;
+}
+.s-slider-block__title-right {
+	padding: 0;
+}
+.s-slider-block__title h2 {
+	font-size: 3rem;
+}
+.s-slider-block__title p {
+	font-size: 1.25rem;
+}
+.s-slider-wrapper {
+	background: white;
+	padding: 30px;
+	border-radius: 1rem;
+	text-align: center;
+}
+.s-slider-block__title-left {
+	display: none !important;
+}
+.s-slider-block__title h2 {
+	padding: 0 !important;
+}
+.s-slider-block__title p {
+	padding: 0 !important;
+}
+</style>
+
+<salla-products-slider
+  source="latest"
+  block-title="Explore Our Vast Product Collection!"
+  sub-title="Discover a world of endless style possibilities at our store, boasting thousands of handpicked products that cater to all tastes."
+  autoplay={{true}}
+  limit={{10}}
+  >
+</salla-product-slider>
 </section> 
